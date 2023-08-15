@@ -91,6 +91,7 @@ export const Permissions = {
   Vo2Max: 'Vo2Max',
   WaistCircumference: 'WaistCircumference',
   WalkingHeartRateAverage: 'WalkingHeartRateAverage',
+  WalkingStepLength: 'WalkingStepLength',
   Weight: 'Weight',
   Workout: 'Workout',
   WorkoutRoute: 'WorkoutRoute',

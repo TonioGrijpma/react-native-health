@@ -69,6 +69,8 @@
         }
     } else if ([@"DistanceCycling" isEqualToString: key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceCycling];
+    } else if ([@"WalkingStepLength" isEqualToString:key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierWalkingStepLength];
     } else if ([@"DistanceSwimming" isEqualToString: key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceSwimming];
     } else if ([@"BasalEnergyBurned" isEqualToString: key]) {
@@ -304,6 +306,8 @@
         }
     } else if ([@"DistanceCycling" isEqualToString:key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceCycling];
+    } else if ([@"WalkingStepLength" isEqualToString:key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierWalkingStepLength];
     } else if ([@"DistanceSwimming" isEqualToString:key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceSwimming];
     } else if ([@"BasalEnergyBurned" isEqualToString:key]) {

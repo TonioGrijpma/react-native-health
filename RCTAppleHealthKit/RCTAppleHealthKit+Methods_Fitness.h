@@ -24,6 +24,8 @@
 - (void)fitness_getDailyDistanceCyclingSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)fitness_getFlightsClimbedOnDay:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)fitness_getDailyFlightsClimbedSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
+// TODO: day
+- (void)fitness_getWalkingStepLengthSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 
 - (void)fitness_setObserver:(NSDictionary *)input __deprecated;
 - (void)fitness_registerObserver:(NSString *)type

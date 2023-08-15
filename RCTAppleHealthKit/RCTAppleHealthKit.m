@@ -393,6 +393,12 @@ RCT_EXPORT_METHOD(getWalkingHeartRateAverage:(NSDictionary *)input callback:(RCT
     [self vitals_getWalkingHeartRateAverage:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getWalkingStepLength:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self _initializeHealthStore];
+    [self fitness_getWalkingStepLengthSamples:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getActiveEnergyBurned:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
    [self _initializeHealthStore];

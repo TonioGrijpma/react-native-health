@@ -260,6 +260,11 @@ declare module 'react-native-health' {
       callback: (err: string, results: HealthValue[]) => void,
     ): void
 
+    getWalkingStepLength(
+      options: HealthInputOptions,
+      callback: (err: string, results: HealthValue[]) => void,
+    ): void
+
     getActiveEnergyBurned(
       options: HealthInputOptions,
       callback: (err: string, results: Array<HealthValue>) => void,
@@ -804,6 +809,7 @@ declare module 'react-native-health' {
     Vo2Max = 'Vo2Max',
     WaistCircumference = 'WaistCircumference',
     WalkingHeartRateAverage = 'WalkingHeartRateAverage',
+    WalkingStepLength = "WalkingStepLength",
     Weight = 'Weight',
     Workout = 'Workout',
     WorkoutRoute = 'WorkoutRoute',
